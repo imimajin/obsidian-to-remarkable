@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REMARKABLE_DIR="$HOME/Documents/writing/Remarkable"
+REMARKABLE_DIR="$HOME/path/to/your/remarkable/folder"
 
 inotifywait -m -e close_write --format "%w%f" "$REMARKABLE_DIR" | while read FILE
 do
